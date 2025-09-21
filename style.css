@@ -1,0 +1,90 @@
+/* --- General Styling --- */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4f4f4;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+/* --- Navbar (Flexbox) --- */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  background: #333;
+  padding: 10px;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+}
+.navbar a:hover {
+  background: #555;
+}
+
+/* --- Layout (Grid) --- */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+aside, main {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px gray;
+}
+
+@media (max-width: 700px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* --- Form Styling --- */
+form {
+  display: flex;
+  flex-direction: column;
+}
+label {
+  margin: 8px 0 4px;
+}
+input, button {
+  padding: 8px;
+  margin-bottom: 10px;
+}
+button {
+  background: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background: #0056b3;
+}
+small {
+  color: red;
+}
+
+/* --- To-Do List --- */
+#taskList li {
+  margin: 5px 0;
+  padding: 6px;
+  background: #eee;
+  border-radius: 5px;
+}
+#taskList button {
+  background: red;
+  color: white;
+  border: none;
+  margin-left: 10px;
+  cursor: pointer;
+}
+#taskList button:hover {
+  background: darkred;
+}
